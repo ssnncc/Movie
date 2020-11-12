@@ -1,0 +1,45 @@
+/* Desktop first  */
+/* Xây dựng website ở màn hình lớn rồi chỉnh dần cho màn hình nhỏ  */
+h1{
+    background-color: red;
+}
+/* @media type
+    type: screen, print, speech, all
+    max-width: kích thước tối đa 
+    min-width: Kích thước tối thiểu
+*/
+@media screen and (max-width: 1200px){
+    /* code sẽ ảnh hưởng ở vùng nhỏ hơn 1200px */
+    h1{
+        background-color: gold;
+    }
+}
+@media screen and (max-width: 768px){
+    h1{
+        background-color: green;
+    }
+}
+
+/* Mobile first  */
+/* Xây dựng website ở màn hình nhỏ rồi tăng kích thước dần cho màn hình lớn hơn  */
+
+h2{
+    background-color: pink;
+}
+@media screen and (min-width: 768px){
+    h2{
+  background-color: purple;
+    }
+}
+@media screen and (min-width: 992px){
+    h2{
+  background-color: burlywood;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px){
+    /* Ảnh hưởng trong phạm vi từ 900px đến 1000px */
+    h2{
+        background-color: teal;
+    }
+}
